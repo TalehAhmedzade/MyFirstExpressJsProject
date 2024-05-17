@@ -17,4 +17,26 @@
 //     console.error(err);
 //   }
 // });
+const fs = require("fs");
 
+const express = require(`express`);
+
+const app = express();
+app.get('/', function (req,res) {
+    
+    fs.readFile("./data.json", "utf8",(err,data)=>{
+        if(!err){
+           const convertedData = JSON.parse(data);
+           convertedData.workers.forEach(element => {
+            console.log(element);
+           });
+            res.send(convertedData);
+        }
+        else{
+            console.error(err);
+        }
+    })
+  });
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000!');
+  })

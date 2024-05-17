@@ -1,5 +1,30 @@
-[
-    { "name": "Sam", "age": 45 },
-    { "name": "Tom", "age": 34 },
-    { "name": "Bill", "age": 18 }
+{
+  "workers": [
+    {
+      "id": 1,
+      "name": "Taleh",
+      "age": 20
+    },
+    {
+      "id": 2,
+      "name": "Hüseyn",
+      "age": 29
+    },
+    {
+      "id": 3,
+      "name": "Əli",
+      "age": 25
+    },
+    {
+      "id": 4,
+      "name": "Isi",
+      "age": 24
+    },
+    {
+      "id": 5,
+      "name": "Murad",
+      "age": 21
+    }
+
   ]
+}
